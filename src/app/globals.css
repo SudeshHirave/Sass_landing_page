@@ -3,6 +3,7 @@
 @theme inline {
   --color-primary: theme(colors.neutral.800);
   --color-secondary: theme(colors.neutral.500);
+  --color-foregorund: #f9f9fb;
 }
 
 .dark {

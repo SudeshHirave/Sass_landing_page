@@ -14,7 +14,7 @@ export const Logos = () => {
     return (
         <>
         <p className="text-xs text-secondary h-7 pl-3">TRUSTED BY-</p>
-        <div className="grid grid-cols-3 lg:grid-cols-5 justify-items-center" style={{ gap: 0 }}>
+        <div className="grid grid-cols-3 lg:grid-cols-5 justify-items-center " style={{ gap: 0 }}>
             {companyLogos.map((logo) => (
                 <div
                     key={logo}

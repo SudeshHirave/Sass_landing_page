@@ -34,7 +34,7 @@ export const Navbar = ()=>{
                 <a href="/resources" className="text-gray-700 hover:text-blue-600">Resourecs</a>
                 <a href="/pricing" className="text-gray-700 hover:text-blue-600">Pricing</a>
             </nav>
-            <nav className="relative flex  item-center justify-between px-2">
+            <nav className="px-5  lg:relative flex item-center justify-between lg:px-2 ">
                 <Image 
                  className="h-10 mt-5 ml-2 w-10 "
                  src="/webpack.svg"

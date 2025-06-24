@@ -1,15 +1,18 @@
+
 import React, { useMemo } from 'react';
+import Image from 'next/image';
 import { Container } from "@/components/container";
 import { Button } from "@/components/button";
 import { Logos } from "@/components/logos"
 
+
 export default function Home() {
   return (
     <div className="min-h-screen flex items-start justify-start">
-      <Container className="min-h-[200vh]  p-4 pt-20 mg:pb-10">
+      <Container className="min-h-[200vh] p-4 pt-20  pl-5 lg:pb-10 ">
         <div className="">
           <div className="flex flex-col">
-            <h1 className='text-4xl md:text-6xl mt-2 font-bold tracking-tight text-primary'>
+            <h1 className='text-5xl md:text-6xl mt-2 font-bold tracking-tight text-primary'>
               <span>
                 Your app,
               </span><br/>
@@ -20,7 +23,7 @@ export default function Home() {
             <p className='text-secondary  md:max-w-xs pt-4 mt-2 text-sm md:text-sm lg:pt-4 w-1/2'>Start selling to enterprise customers with just a few line of code. Implement features like a single sign-on in minutes instead of months. </p>
             <div className=" flex gap-5 pt-7 lg:pt-0">
               <Button className='py-2 px-4 max-w-35 min-w-25 mt-8 '>Get started</Button>
-              <Button className='py-2 px-4 max-w-35 min-w-25 mt-8 '>Get started</Button>
+              <Button className='py-2 px-4 min-w-35 mt-8 text-black'>Talk to an Expert</Button>
             </div>
             <div className="h-70 w-full flex py-auto items-center">
               <button
@@ -28,9 +31,45 @@ export default function Home() {
               >
                 <span className='h-full w-fit'>Introducing Radar: protect against bots, fraud, abuse:</span>
               </button>
-            </div>
-            <div className="h-">
-              <Logos/>
+            </div> 
+            <div className=" pb-15"> 
+              <Logos/> 
+            </div> 
+            <div className=" pt-20 bg-foregorund"> 
+              <div className="flex"> 
+              <div className="w-1/2  pr-8"> 
+                <h2 className="text-3xl pb-5 text-indigo-500">The all-in-one solution</h2>
+                <h3 className="text-5xl pb-5 font-bold text-primary">Enterprise SSO (and a whole lot more)</h3>
+                <p className="text-secondary pb-5">WorkOS is a set of building blocks for quickly adding enterprise features to your app. You’ll be shipping quickly with a market-proven solution for your customers.</p>
+                <Button className="hover:bg-indigo-500">Add Single Sign-On to your app </Button>
+              </div>
+              <div className="w-1/2 relative flex  items-center justify-center item-center">
+                <Image
+                  className="absolute z-[2]"
+                  src="/6564a28f8383f05a0258710a_stack-1.png"
+                  alt="Stack"
+                  width={500}
+                  height={400}
+                />
+                <Image
+                  className="absolute pt-8 z-[1]"
+                  src="/6564a28f8383f05a0258710a_stack-1.png"
+                  alt="Stack"
+                  width={500}
+                  height={400}
+                />
+                <Image
+                  className="absolute pt-16 z-[0]"
+                  src="/6564a28f8383f05a0258710a_stack-1.png"
+                  alt="Stack"
+                  width={500}
+                  height={400}
+                />
+              </div>
+              </div>
+              <div className="div">
+
+              </div>
             </div>
           </div>
         </div>
