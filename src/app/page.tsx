@@ -10,7 +10,7 @@ import { CodeBlock2 } from '@/components/CodeBlock/CodeBlock2';
 export default function Home() {
   return (
     <div className="min-h-screen flex items-start justify-start">
-      <Container className="min-h-[200vh] bg-black  pt-24  lg:pb-10 ">
+      <Container className="min-h-[200vh]   pt-24  lg:pb-10 ">
           <div className="flex flex-col px-5 lg:px-30 ">
             <h1 className='text-5xl md:text-6xl mt-2 font-bold tracking-tight text-primary'>
               <span>
