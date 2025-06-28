@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const companyLogos = [
     "asus-6630-logo-svgrepo-com.svg",
     "honda-9-logo-svgrepo-com.svg",
@@ -21,7 +23,7 @@ export const Logos = () => {
                     className="flex items-center justify-center bg-white rounded"
                     style={{ width: 80, height: 80, border: "none", boxShadow: "none" }}
                 >
-                    <img
+                    <Image
                         src={`/company_logos/${logo}`}
                         alt={logo.replace(/\.svg$/, "")}
                         className="object-contain"

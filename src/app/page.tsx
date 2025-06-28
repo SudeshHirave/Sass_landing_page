@@ -1,5 +1,4 @@
-
-import React, { useMemo } from 'react';
+ 
 import Image from 'next/image';
 import { Container } from "@/components/container";
 import { Button } from "@/components/button";

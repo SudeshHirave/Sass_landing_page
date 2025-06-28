@@ -11,15 +11,12 @@ import {motion,AnimatePresence} from 'motion/react'
 export const MobMenu = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [clicked, setClicked] = useState<null | number>(null);
-  const [z,setz] = useState<number>(-1);
+
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
     setClicked(null);
 
   };
-  useEffect(() => {
-  setz(isOpen ? 2 : -1);
-}, [isOpen]);
   return (
     <>
 <motion.button

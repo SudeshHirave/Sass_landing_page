@@ -1,6 +1,6 @@
 import { cn } from "@/lib/cn";
 import { MdOutlineDescription } from "react-icons/md";
-import { FaServer, FaCode, FaSyncAlt, FaCogs, FaLayerGroup, FaBuilding } from "react-icons/fa";
+import { FaServer, FaCode, FaSyncAlt, FaLayerGroup, FaBuilding } from "react-icons/fa";
 
 export const Features2: React.FC = () => {
     const features = [
