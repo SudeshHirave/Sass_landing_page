@@ -4,6 +4,7 @@ import { Container } from "../container"
 import { Desktopmenu } from "./DesktopMenu";
 import { products,developers,resources} from "./NavComponents"
 import { MobMenu } from "./MobMenu";
+import Link from "next/link";
   
   export const TABS = [
     {title:'Products',
@@ -28,11 +29,11 @@ export const Navbar = ()=>{
     return (
         <Container className="px-5 lg:px-30">
             <nav className="hidden">
-                <a href="/" className="text-gray-700 hover:text-blue-600">Home</a>
-                <a href="/products" className="text-gray-700 hover:text-blue-600">Products</a>
-                <a href="/developers" className="text-gray-700 hover:text-blue-600">Developers</a>
-                <a href="/resources" className="text-gray-700 hover:text-blue-600">Resourecs</a>
-                <a href="/pricing" className="text-gray-700 hover:text-blue-600">Pricing</a>
+                <Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link>
+                <Link href="/products" className="text-gray-700 hover:text-blue-600">Products</Link>
+                <Link href="/developers" className="text-gray-700 hover:text-blue-600">Developers</Link>
+                <Link href="/resources" className="text-gray-700 hover:text-blue-600">Resourecs</Link>
+                <Link href="/pricing" className="text-gray-700 hover:text-blue-600">Pricing</Link>
             </nav>
             <nav className="px-5 w-full lg:relative flex item-center justify-between lg:px-2 ">
                 <Image 

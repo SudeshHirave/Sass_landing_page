@@ -1,4 +1,4 @@
-export default {
+const sample = {
   javascript: `// Get a user’s access token and
 // profile data from an Identity Provider
 
@@ -88,3 +88,4 @@ var profile = await ssoService.GetProfileAndToken(options);
   code=01E2RJ4C05B52KKZ8FSRDAP23J"
 `
 };
+export default sample;

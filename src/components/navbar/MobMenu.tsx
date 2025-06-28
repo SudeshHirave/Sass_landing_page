@@ -1,6 +1,6 @@
 
 "use client"
-import { useState,useEffect } from "react"
+import { useState } from "react"
 import {TABS} from "."
 import { HiChevronRight,HiArrowSmLeft, HiMenu,HiOutlineX } from "react-icons/hi";
 import Image from "next/image";

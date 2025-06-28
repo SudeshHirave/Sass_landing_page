@@ -1,5 +1,5 @@
 import { clsx } from 'clsx'
 
-export const cn = (...inputs: any[]) => {
+function cn(...inputs: (string | undefined | null | false)[]): string {
   return clsx(...inputs)
 }
