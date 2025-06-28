@@ -26,7 +26,7 @@ import { MobMenu } from "./MobMenu";
 export const Navbar = ()=>{
     
     return (
-        <Container className="">
+        <Container className="px-5 lg:px-30">
             <nav className="hidden">
                 <a href="/" className="text-gray-700 hover:text-blue-600">Home</a>
                 <a href="/products" className="text-gray-700 hover:text-blue-600">Products</a>
@@ -34,7 +34,7 @@ export const Navbar = ()=>{
                 <a href="/resources" className="text-gray-700 hover:text-blue-600">Resourecs</a>
                 <a href="/pricing" className="text-gray-700 hover:text-blue-600">Pricing</a>
             </nav>
-            <nav className="px-5  lg:relative flex item-center justify-between lg:px-2 ">
+            <nav className="px-5 w-full lg:relative flex item-center justify-between lg:px-2 ">
                 <Image 
                  className="h-10 mt-5 ml-2 w-10 "
                  src="/webpack.svg"

@@ -4,14 +4,15 @@ import Image from 'next/image';
 import { Container } from "@/components/container";
 import { Button } from "@/components/button";
 import { Logos } from "@/components/logos"
-
-
+import { Features } from '@/components/features';
+import { Features2 } from '@/components/features2';
+import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
+import { CodeBlock2 } from '@/components/CodeBlock/CodeBlock2';
 export default function Home() {
   return (
     <div className="min-h-screen flex items-start justify-start">
-      <Container className="min-h-[200vh] p-4 pt-20  pl-5 lg:pb-10 ">
-        <div className="">
-          <div className="flex flex-col">
+      <Container className="min-h-[200vh] bg-black  pt-24  lg:pb-10 ">
+          <div className="flex flex-col px-5 lg:px-30 ">
             <h1 className='text-5xl md:text-6xl mt-2 font-bold tracking-tight text-primary'>
               <span>
                 Your app,
@@ -35,44 +36,70 @@ export default function Home() {
             <div className=" pb-15"> 
               <Logos/> 
             </div> 
-            <div className=" pt-20 bg-foregorund"> 
-              <div className="flex"> 
-              <div className="w-1/2  pr-8"> 
-                <h2 className="text-3xl pb-5 text-indigo-500">The all-in-one solution</h2>
-                <h3 className="text-5xl pb-5 font-bold text-primary">Enterprise SSO (and a whole lot more)</h3>
-                <p className="text-secondary pb-5">WorkOS is a set of building blocks for quickly adding enterprise features to your app. You’ll be shipping quickly with a market-proven solution for your customers.</p>
-                <Button className="hover:bg-indigo-500">Add Single Sign-On to your app </Button>
+          </div>
+            <div className=" pt-20    bg-foregorund px-5 lg:px-30"> 
+              <div className="flex  "> 
+                <div className="w-1/2  pr-8"> 
+                  <h2 className="text-3xl pb-5 text-indigo-500">Theall-in-one solution</h2>
+                  <h3 className="text-5xl pb-5 font-boldtext-primary">Enterprise SSO (and a whole lot more)</h3>
+                  <p className="text-secondary pb-5">WorkOS is a set ofbuilding blocks for quickly adding enterprise features toyour app. You’ll be shipping quickly with a market-provensolution for your customers.</p>
+                  <Button className="hover:bg-indigo-500">Add Single Sign-Onto your app </Button>
+                </div>
+                <div className="w-1/2 relative flex  items-centerjustify-center item-center">
+                  <Image
+                    className="absolute z-[2]"
+                    src="/6564a28f8383f05a0258710a_stack-1.png"
+                    alt="Stack"
+                    width={500}
+                    height={400}
+                  />
+                  <Image
+                    className="absolute pt-8 z-[1]"
+                    src="/6564a28f8383f05a0258710a_stack-1.png"
+                    alt="Stack"
+                    width={500}
+                    height={400}
+                  />
+                  <Image
+                    className="absolute pt-16 z-[0]"
+                    src="/6564a28f8383f05a0258710a_stack-1.png"
+                    alt="Stack"
+                    width={500}
+                    height={400}
+                  />
+                </div>
               </div>
-              <div className="w-1/2 relative flex  items-center justify-center item-center">
-                <Image
-                  className="absolute z-[2]"
-                  src="/6564a28f8383f05a0258710a_stack-1.png"
-                  alt="Stack"
-                  width={500}
-                  height={400}
-                />
-                <Image
-                  className="absolute pt-8 z-[1]"
-                  src="/6564a28f8383f05a0258710a_stack-1.png"
-                  alt="Stack"
-                  width={500}
-                  height={400}
-                />
-                <Image
-                  className="absolute pt-16 z-[0]"
-                  src="/6564a28f8383f05a0258710a_stack-1.png"
-                  alt="Stack"
-                  width={500}
-                  height={400}
-                />
-              </div>
-              </div>
-              <div className="div">
-
+              <div className="py-20 px-auto flex flex-wrap justify-evenly gap-20 space">
+                <Features/>
               </div>
             </div>
-          </div>
-        </div>
+            <div className=" py-25  px-5 lg:px-30 bg-foregorund2">
+              <div className=" mb-2 h-20 flex flex-col justify-center items-center lg:mb-15 ">
+                <h2 className="text-glows text-2xl font-bold mb-2 lg:text-3xl " >Developer-first design</h2>
+                <h3  className="text-4xl font-bold text-white tracking-tighter lg:text-5xl">A unified platform with modern APIs</h3>
+              </div>
+              <div className="flex flex-col  lg:flex-row lg:justify-between gap-10 w-full">
+                <div className=" labels w-full lg:w-4/10 flex flex-col justify-center items-center gap-2 lg:items-start lg:justify-start">
+                  <p className='text-secondary2 text-pretty text-center text-lg lg:text-balance lg:text-left'>WorkOS provides a single, elegant interface that abstracts dozens of enterprise integrations.</p>
+                  <div className="flex justify-start gap-2 mt-3">
+                    <Button>Read the docs</Button>
+                    <Button>Get your API key</Button>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <Features2/>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-7 w-full lg:w-full lg:max-w-6/10 lg:px-2">
+                  <div className=" w-full ">
+                    <CodeBlock/>
+                  </div>
+                  <div className="">
+                    <CodeBlock2/>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
       </Container>
     </div>
   );

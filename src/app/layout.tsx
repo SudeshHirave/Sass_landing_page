@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body content="width=device-width, initial-scale=1.0"
-        className={`${inter.className} antialiased bg-neutral-200`}
+        className={`${inter.className} antialiased bg-white`}
       >
         <main className="w-full">
         </main>

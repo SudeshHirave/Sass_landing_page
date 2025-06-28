@@ -3,7 +3,15 @@
 @theme inline {
   --color-primary: theme(colors.neutral.800);
   --color-secondary: theme(colors.neutral.500);
+  --color-secondary2: theme(colors.neutral.300);
   --color-foregorund: #f9f9fb;
+  --color-foregorund2: #030527;
+  --color-foregorund3: #0f2151;
+  --color-glows: #23eecb;
+  --color-svgColor: #558adb;
+  --color-border1: #2b335a;
+  --color-codebg: #181b39;
+  --color-thinfont: #878ca6;
 }
 
 .dark {
